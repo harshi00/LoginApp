@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgdstyle"
+    tools:context="com.example.admin.my_appl.MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="monospace"
+        android:text="Account Login!"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="UnknownId" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/bannerstyle"
+        android:padding="10dp"
+        android:id="@+id/relativeLayout2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+
+
+            android:id="@+id/linearLayout">
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:drawableTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="           Enter Email Address"
+                android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <EditText
+
+                android:id="@+id/etPassword"
+                android:drawableLeft="@android:drawable/ic_lock_lock"
+                android:drawableTint="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+                android:ems="10"
+                android:hint="             Enter Your Password"
+                android:inputType="textPassword" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonstyle"
+                android:elevation="5dp"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonstyle"
+                android:elevation="5dp"
+                android:text="Create Your Account" />
+
+            <Button
+                android:id="@+id/btnGoogle"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/buttonstyle"
+                android:elevation="5dp"
+
+                android:text="" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginEnd="29dp"
+            android:text="Forget Password?"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+
+</RelativeLayout>
+
+
+
+
